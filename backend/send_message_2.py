@@ -13,7 +13,7 @@ MESSAGE = sys.argv[1]
 
 # Wellfound login credentials and thread URL
 WELLFOUND_EMAIL = "hatwar.saket23@gmail.com"
-WELLFOUND_PASSWORD = "Hatwar@2303"
+WELLFOUND_PASSWORD = ""
 THREAD_URL = "https://wellfound.com/jobs/messages/966551005"
 
 def human_delay(min_delay=1, max_delay=3):

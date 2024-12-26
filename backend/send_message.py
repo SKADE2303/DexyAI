@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # Configure your login credentials and message
 WELLFOUND_EMAIL = "hatwar.saket23@gmail.com"
-WELLFOUND_PASSWORD = "Hatwar@2303"
+WELLFOUND_PASSWORD = ""
 THREAD_URL = "https://wellfound.com/jobs/messages/966551005"
 MESSAGE = "Hello, this is an automated message!"
 
@@ -28,17 +28,7 @@ options.add_argument(f"user-agent={user_agent}")
 service = Service("/usr/local/bin/chromedriver-linux64/chromedriver")
 driver = webdriver.Chrome(service=service, options=options)
 
-# Log in to Wellfound
-# driver.get("https://wellfound.com/login")
-# random_sleep(3, 6)  # Random sleep between 3 to 6 seconds
-
-# driver.find_element(By.NAME, "user[email]").send_keys(WELLFOUND_EMAIL)
-# random_sleep(0.5, 1.5)  # Random sleep between 0.5 to 1.5 seconds
-# driver.find_element(By.NAME, "user[password]").send_keys(WELLFOUND_PASSWORD)
-# random_sleep(0.5, 1.5)
-# driver.find_element(By.NAME, "user[password]").send_keys(Keys.RETURN)
-
-random_sleep(5, 7)  # Wait for login to complete
+random_sleep(5, 7)  
 
 # Navigate to the thread
 driver.get(THREAD_URL)
