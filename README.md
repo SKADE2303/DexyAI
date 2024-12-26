@@ -3,6 +3,7 @@
 This is a web automation tool that automates interactions with platforms like Wellfound. It includes a frontend built with Next.js for user interaction and a backend powered by Python and Selenium for automated browser control.
 Demo Link: https://drive.google.com/file/d/1_LE8chAna4x5DMo02f3IgeQgdDK6LsjQ/view?usp=sharing
 
+Modified assignment suggestion : Making the same functionality for a website which doesn't use detectors for automated bots
 ---
 
 ## Features
