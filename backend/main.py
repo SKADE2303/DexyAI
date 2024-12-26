@@ -30,9 +30,9 @@ def send_message():
         message = data['message']
         print("Message received:", message)
 
-        # Run the Selenium script with the message as an argument
+        
         result = subprocess.run(
-            ["python", "send_message_2.py", message],
+            ["python", "send_message.py", message],
             capture_output=True,
             text=True,
         )

@@ -8,7 +8,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Configure your login credentials and message
 WELLFOUND_EMAIL = "hatwar.saket23@gmail.com"
 WELLFOUND_PASSWORD = ""
 THREAD_URL = "https://wellfound.com/jobs/messages/966551005"
@@ -32,17 +31,16 @@ random_sleep(5, 7)
 
 # Navigate to the thread
 driver.get(THREAD_URL)
-random_sleep(3, 5)  # Wait for the page to load before interacting
+random_sleep(3, 5)  
 
 # Locate the message box and send the message
 message_box = WebDriverWait(driver, 10).until(
     EC.presence_of_element_located((By.CSS_SELECTOR, "textarea#response"))
 )
-random_sleep(1, 3)  # Simulate typing delay
+random_sleep(1, 3)  
 message_box.send_keys(MESSAGE)
 message_box.send_keys(Keys.RETURN)
 
-random_sleep(2, 4)  # Wait after sending the message
-
+random_sleep(2, 4) 
 print("Message sent successfully!")
 driver.quit()
